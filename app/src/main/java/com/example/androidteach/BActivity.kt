@@ -15,6 +15,8 @@ class BActivity : AppCompatActivity() {
             startActivity(Intent(this, CActivity::class.java))
         }
         val name = intent.getStringExtra("name")
+        //9.0不会自动弹出
+        bAcEditText.requestFocus()
         Log.d("SecondActivity", "ZLog onCreate : $name")
     }
 

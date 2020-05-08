@@ -35,6 +35,11 @@ class AActivity : AppCompatActivity() {
         Log.d("AActivity", "ZLog onConfigurationChanged $newConfig")
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        Log.d("AActivity", "ZLog onActivityResult ")
+    }
+
     override fun onStart() {
         super.onStart()
         Log.d("AActivity", "ZLog onStart ")

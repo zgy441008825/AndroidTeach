@@ -22,9 +22,5 @@
         android:id="@+id/bAcEditText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:focusable="true"
-        android:inputType="text"
-        android:text="@string/app_name"
-        android:focusableInTouchMode="true"
         app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
