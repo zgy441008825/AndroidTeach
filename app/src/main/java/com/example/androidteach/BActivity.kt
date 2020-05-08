@@ -1,5 +1,6 @@
 package com.example.androidteach
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,12 +13,14 @@ class BActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
         textView.setOnClickListener {
-            startActivity(Intent(this, CActivity::class.java))
+//            startActivity(Intent(this, CActivity::class.java))
+            val intent = Intent()
+            intent.putExtra("result", "嫁")
+            setResult(Activity.RESULT_OK, intent)
+            finish()
         }
         val name = intent.getStringExtra("name")
-        //9.0不会自动弹出
-        bAcEditText.requestFocus()
-        Log.d("SecondActivity", "ZLog onCreate : $name")
+        Log.d("SecondActivity", "ZLog Intent 取出AActivity传递过来的数据: $name")
     }
 
     override fun onStart() {
