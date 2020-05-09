@@ -13,7 +13,7 @@
         tools:ignore="LockedOrientationActivity">
         <activity
             android:name=".AActivity"
-            android:configChanges="locale|orientation|screenLayout|fontScale">
+            android:windowSoftInputMode="stateHidden|adjustUnspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
