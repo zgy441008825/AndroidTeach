@@ -1,8 +1,9 @@
-package com.example.androidteach
+package com.example.androidteach.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.androidteach.R
 
 class CActivity : AppCompatActivity() {
 

@@ -1,10 +1,11 @@
-package com.example.androidteach
+package com.example.androidteach.Activity
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.androidteach.R
 import kotlinx.android.synthetic.main.activity_second.*
 
 class BActivity : AppCompatActivity() {
